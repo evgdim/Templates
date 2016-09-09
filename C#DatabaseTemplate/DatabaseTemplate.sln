@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1DDC8DF9-8EC9-49C3-AF59-575CC4C325BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6A64E686-5278-4C50-8A5D-3BC4778E25A9}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DatabaseTemplate", "src\DatabaseTemplate\DatabaseTemplate.xproj", "{2E60EAE7-6EC7-436E-AB13-3AEC50B1BBE3}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "UsageApp", "src\UsageApp\UsageApp.xproj", "{7AA3FCEA-67BD-44CC-8AA0-32F21309A7AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E60EAE7-6EC7-436E-AB13-3AEC50B1BBE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E60EAE7-6EC7-436E-AB13-3AEC50B1BBE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E60EAE7-6EC7-436E-AB13-3AEC50B1BBE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E60EAE7-6EC7-436E-AB13-3AEC50B1BBE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AA3FCEA-67BD-44CC-8AA0-32F21309A7AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AA3FCEA-67BD-44CC-8AA0-32F21309A7AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AA3FCEA-67BD-44CC-8AA0-32F21309A7AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AA3FCEA-67BD-44CC-8AA0-32F21309A7AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2E60EAE7-6EC7-436E-AB13-3AEC50B1BBE3} = {1DDC8DF9-8EC9-49C3-AF59-575CC4C325BC}
+		{7AA3FCEA-67BD-44CC-8AA0-32F21309A7AD} = {1DDC8DF9-8EC9-49C3-AF59-575CC4C325BC}
+	EndGlobalSection
+EndGlobal
