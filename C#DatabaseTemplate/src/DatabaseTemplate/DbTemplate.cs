@@ -42,22 +42,7 @@ namespace DatabaseTemplate
         }
         public List<T> Select<T>(string select, Func<SqlDataReader, T> mapper)
         {
-            using (SqlConnection conn = new SqlConnection(this.connectionString))
-            {
-                conn.Open();
-                using (SqlCommand cmd = new SqlCommand(select, conn))
-                {
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        List<T> result = new List<T>();
-                        while (reader.Read())
-                        {
-                            result.Add(mapper.Invoke(reader));
-                        }
-                        return result;
-                    }
-                }
-            }
+            return Select(select, null, mapper);
         }
 
         public int Update(string statement, Dictionary<string, object> parameters)
